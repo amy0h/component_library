@@ -1,0 +1,98 @@
+.banner {
+    padding: 1em;
+    border-radius: 0.375rem;
+    display: flex;
+}
+
+.banner-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.banner-text h3, p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.43em;
+}
+
+.banner-text h3 {
+    margin-bottom: 0.5714em;
+}
+
+.banner-text p {
+    font-weight: 400;
+}
+
+/* Success Banner */
+
+.success {
+    background-color: #ECFDF5;
+}
+
+.icon-success {
+    color: #34D399;
+}
+
+.success h3 {
+    color: #065F46;
+}
+
+.success p {
+    color: #047857;
+}
+
+/* Warning Banner */
+
+.warning {
+    background-color: #FFFBEB;
+}
+
+.icon-warning {
+    color: #FBBF24;
+}
+
+.warning h3 {
+    color: #92400E;
+}
+
+.warning p {
+    color: #B45309;
+}
+
+/* Error Banner */
+
+.error {
+    background-color: #FEF2F2;
+}
+
+.icon-error {
+    color: #F87171;
+}
+
+.error h3 {
+    color: #92400E;
+}
+
+.error p {
+    color: #B45309;
+}
+
+/* Neutral Banner */
+
+.neutral {
+    background-color: #EFF6FF;
+} 
+
+.icon-neutral {
+    color: #60A5FA;
+}
+
+.neutral h3 {
+    color: #1E40AF;
+}
+
+.neutral p {
+    color: #1C51B9;
+}
