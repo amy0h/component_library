@@ -1,9 +1,18 @@
-import React from 'react'
+import './Testimonial.css'
 
-const Testimonial = () => {
+const Testimonial = ({ children }) => {
   return (
-    <div>Testimonial</div>
-  )
-}
+    <div className='testimonial-container'>
+      <div className='image-container'>
+        <img
+          src='./logo.svg'
+          className='logo'
+          alt='logo'
+        />
+      </div>
+      {children}
+    </div>
+  );
+};
 
 export default Testimonial

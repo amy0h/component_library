@@ -38,13 +38,24 @@ export const cards = [
   }
 ]
 
-export const testimonials = [
+export const testimonialImg = 
   { fullName: "May Andersons",
     company: "Workcation",
     position: "CTO",
     comment:
       `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Sed urna nulla vitae laoreet augue. Amet feugiat est integer
-      dolor auctor adipiscing nunc urna, sit. `
+      dolor auctor adipiscing nunc urna, sit. `,
+    img: './public/testimonial-pic.png'
 }
-]
+
+export const testimonial = 
+  { fullName: "May Andersons",
+    company: "Workcation",
+    position: "CTO",
+    comment:
+      `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Sed urna nulla vitae laoreet augue. Amet feugiat est integer
+      dolor auctor adipiscing nunc urna, sit. `,
+    img: './src/assets/testimonial-pic.png'
+}

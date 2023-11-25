@@ -1,11 +1,15 @@
 const TestimonialImageContent = ({ comment, fullName, company, position }) => {
-  console.log({ comment, fullName, company, position })
   return (
     <>
-      <div className="content-container">
-        <p>{comment}</p>
-        <p>{fullName}</p>
-        <p>{company}, <span>{position}</span></p>
+      <div className="testimonial-img-content-container">
+        <img 
+          className="quote-img"
+          src='/quote.svg'
+          alt='quotation image'>
+          </img>
+        <p className="comment">{comment}</p>
+        <p className="name">{fullName}</p>
+        <p className="company">{company}, <span className="position">{position}</span></p>
       </div>
     </>
   )

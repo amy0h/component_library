@@ -1,6 +1,6 @@
 import TestimonialImage from "./TestimonialImage";
 import TestimonialImageContent from "./TestimonialImageContent";
 
-Testimonial.Content = TestimonialImageContent;
+TestimonialImage.Content = TestimonialImageContent;
 
 export default TestimonialImage;

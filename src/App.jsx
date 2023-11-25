@@ -1,12 +1,12 @@
-import { colors, bannerTypes, cards, testimonials } from './constants';
+import { colors, bannerTypes, cards, testimonialImg, testimonial } from './constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Badge from './components/Badge/Badge';
 import Banner from './components/Banner/index';
 import Card from './components/Card/index';
+import TestimonialImage from './components/TestimonialImage/index';
+import Testimonial from './components/Testimonial/index';
+import './App.css';
 
-import TestimonialImage from './components/TestimonialImage/TestimonialImage';
-import './App.css'
-import TestimonialImageContent from './components/TestimonialImage/TestimonialImageContent';
 
 function renderBadgeContainer(badgeType, rounded, colors) {
   return (
@@ -69,17 +69,29 @@ function App() {
       </div>
 
       <div className='component-container'>
-        <div className='testimonial-container'>
-          <TestimonialImage>
-            <TestimonialImageContent
-              comment={testimonials.comment}
-              fullName={testimonials.fullName}
-              company={testimonials.company}
-              position={testimonials.position}>
-            </TestimonialImageContent>
-          </TestimonialImage>
-        </div>
+        <TestimonialImage
+          img={testimonialImg.img}>
+          <TestimonialImage.Content
+            comment={testimonialImg.comment}
+            fullName={testimonialImg.fullName}
+            company={testimonialImg.company}
+            position={testimonialImg.position}>
+          </TestimonialImage.Content>
+        </TestimonialImage>
       </div>
+
+
+      <div className='component-container'>
+        <Testimonial>
+          <Testimonial.Content
+            comment={testimonial.comment}
+            fullName={testimonial.fullName}
+            company={testimonial.company}
+            position={testimonial.position}>
+          </Testimonial.Content>
+        </Testimonial>
+      </div>
+      
     </main>
   );
 }
